@@ -1,6 +1,7 @@
 require_relative '../lib/password_manager_2'
 load "#{__dir__}/solution.x.rb" if File.file?("#{__dir__}/solution.x.rb")
-require 'time'
+require 'date'
+require 'timecop'
 
 RSpec.describe PasswordManager2 do
   describe '#add' do
